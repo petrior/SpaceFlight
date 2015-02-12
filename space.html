@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpaceSimulator</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<style>
+			html, body, div, canvas {
+				margin:0;
+				padding:0;
+				background-color:#000;
+			}
+			
+			#stats {
+				position: absolute;
+				top: 50px; width: 100%;
+				padding: 5px; left:60px;
+			}
+			
+			canvas {
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			
+			#stuff {
+				position:absolute;
+				left:200px;
+				top:10px;
+				color:#fff;
+				background-color:rgba(0,0,0,0);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="stuff">
+				Mouse Button 1 and drag to control camera.<br>
+				Arrow keys to control ship.<br>
+				Model by Angryfly.<br>
+				Music: Lee Rosvere - Chapter Seven - Re-entry
+			</div>
+		</div>
+		<script src="three.js"></script>
+		<script src="stats.min.js"></script>
+		
+		<script src="loaders/ColladaLoader.js"></script>
+		
+		<script src="Controller.js"></script>
+		<script src="Input.js"></script>
+		<script src="SpaceSimulator.js"></script>
+		<script type="text/javascript">
+			var spaceSimulator = new SpaceSimulator();
+		</script>
+	</body>
+</html>
